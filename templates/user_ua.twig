@@ -1,0 +1,11 @@
+{{ user.name }} {{ user.surname }}, {{ user.age }} лет
+{% if user.about_me %}
+<b>Обо мне </b>
+{{ user.about_me }}
+{% endif %}
+
+{% if user.hobby %}
+<b>Хобби </b>
+{{ user.hobby }}
+{% endif %}
+<a href="tg://user?id={{user.chat_id}}">Связаться с водителем</a>
